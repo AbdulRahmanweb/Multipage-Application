@@ -8,6 +8,7 @@ import NotFound from './Components/NotFount';
 import Products from './Components/Products';
 import ProductDetails from './Components/ProductDetails';
 import products from './Components/ProductData';
+import PostDetails from './Components/PostDetails';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <Route path='*' element={<NotFound />} />
       <Route path='products' element={<Products />} />
       <Route path='products/:id' element={<ProductDetails />} />
+      <Route path='/post/:id' element={<PostDetails />} />
     </Routes>
   </>);
 }
